@@ -1,0 +1,117 @@
+<!--
+1. Repositório GitHub
+    Crie um repositório público novo (ou reutilize um que já tenha para o curso).
+    No README.md explique brevemente o propósito do projeto.
+
+2. Estrutura de arquivos
+    Coloque na raiz do repositório:
+        perfil.html
+        styles.css
+
+3. HTML5 Semântico
+    No perfil.html, utilize as seguintes tags para organizar o conteúdo:
+        <header> — cabeçalho com seu nome, foto e, se quiser, slogan.
+        <nav> — menu de navegação interna (âncoras para seções).
+        <main> — envoltório do conteúdo principal.
+        <section> — blocos temáticos, por exemplo:
+            Sobre mim
+            Habilidades
+            Projetos
+            Contato
+        <article> — para “posts” ou depoimentos, se aplicável.
+        <aside> — informações complementares (links, redes sociais).
+        <footer> — rodapé com direitos autorais ou créditos.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Perfil Pessoal</title>
+
+    <link rel="icon" href="https://placehold.co/32x32/0077cc/ffffff?text=MP" type="image/png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <img src="https://avatars.githubusercontent.com/u/150731012?v=4" alt="Foto de Perfil" class="profile-pic">
+        <h1>Jean Jerri Rocha Bento da Silva</h1>
+        <p class="slogan">Desenvolvedor Web | Apaixonado por Tecnologia e Inovação</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#sobre">Sobre Mim</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <div class="page-wrapper">
+
+        <main>
+            <section id="sobre">
+                <h2>Sobre Mim</h2>
+                <p>Olá! Sou um desenvolvedor web com experiência em criar soluções digitais modernas e eficientes. Tenho grande interesse em aprender novas tecnologias e aplicá-las em projetos desafiadores que gerem valor real para os usuários.</p>
+            </section>
+
+            <section id="habilidades">
+                <h2>Habilidades</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">HTML5</div>
+                    <div class="skill-card">CSS3</div>
+                    <div class="skill-card">JavaScript</div>
+                    <div class="skill-card">React</div>
+                    <div class="skill-card">Java</div>
+                    <div class="skill-card">Java</div>
+                    <div class="skill-card">SpringBoot</div>
+                    <div class="skill-card">SQL</div>
+                    <div class="skill-card">Git & GitHub</div>
+                </div>
+            </section>
+
+            <section id="projetos">
+                <h2>Meus Projetos</h2>
+                <article class="project-card">
+                    <h3>Nome do Projeto 1</h3>
+                    <p>Descrição do projeto.</p>
+                        <a href="#" target="_blank" class="project-link">Ver no GitHub</a>
+                </article>
+                <article class="project-card">
+                    <h3>Nome do Projeto 2</h3>
+                    <p>Descrição do projeto.</p>
+                    <a href="#" target="_blank" class="project-link">Ver no GitHub</a>
+                </article>
+            </section>
+
+            <section id="contato">
+                <h2>Contato</h2>
+                <p>Estou aberto a novas oportunidades e colaborações. Sinta-se à vontade para entrar em contato através do meu e-mail:</p>
+                <a href="mailto:jeanjerry2015@gmail.com" class="email-link">jeanjerry2015@gmail.com</a>
+            </section>
+        </main>
+
+        <aside>
+            <h3>Redes Sociais</h3>
+            <ul>
+                <li><a href="https://github.com/JeanJerri" target="_blank">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/jean-jerri/" target="_blank">LinkedIn</a></li>
+            </ul>
+        </aside>
+
+    </div> 
+    
+    <footer>
+        <p>&copy; 2025 Jean Jerri. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

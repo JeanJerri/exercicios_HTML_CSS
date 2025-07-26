@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercícios</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+        <!--7. Menu Hamburger - implemente um menu “hamburger” que:
+            - Apareça apenas em telas com largura ≤ 600 px.
+            - Oculte a navegação padrão e abra/feche o menu ao ser clicado.-->
+        <nav class="menu">
+            <button id="hamburguer">&#9776;</button>
+            <ul id="nav-links">
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+
+        <!--
+        1. Crie um arquivo chamado index.html e monte nele a seguinte estrutura usando
+        sempre tags semânticas:
+            - Um <header> contendo um <h1> (título) e um <p> (parágrafo) introdutório.
+            - Um <main> dividido em duas subseções:
+            - Seção “Missão” com <h2> e <p>.
+            - Seção “Visão” com <h2> e <p>.
+            - Um <footer> com um <p> de copyright.
+        -->
+        <h1>Cabeçalho</h1>
+        <p>Aqui está o parágrado introdutório!</p>
+    </header>
+
+    <main>
+        <section class="secao-missao">
+        <h2>Missão</h2>
+        <p class="destaque">Parágrafo.</p>
+        </section>
+
+        <section class="secao-visao">
+        <h2>Visão</h2>
+        <p id="importante">Parágrafo.</p>
+        </section>
+
+        <!--6. Exercício Grid e Flexbox - Monte uma galeria com oito imagens e legendas,
+        organizadas por Grid. Além disso, envolva toda a galeria em um contêiner que
+        utilize Flexbox para centralizar o conjunto na página e permitir que as figuras
+        quebrem de linha quando a largura for limitada. Ajuste o número de colunas do
+        Grid para telas menores por meio de media query.-->
+        <div class="galeria-container">
+            <div class="galeria">
+                <figure><img src="img1.jpg" alt=""><figcaption>Imagem 1</figcaption></figure>
+                <figure><img src="img2.jpg" alt=""><figcaption>Imagem 2</figcaption></figure>
+                <figure><img src="img3.jpg" alt=""><figcaption>Imagem 3</figcaption></figure>
+                <figure><img src="img4.jpg" alt=""><figcaption>Imagem 4</figcaption></figure>
+                <figure><img src="img5.jpg" alt=""><figcaption>Imagem 5</figcaption></figure>
+                <figure><img src="img6.jpg" alt=""><figcaption>Imagem 6</figcaption></figure>
+                <figure><img src="img7.jpg" alt=""><figcaption>Imagem 7</figcaption></figure>
+                <figure><img src="img8.jpg" alt=""><figcaption>Imagem 8</figcaption></figure>            
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 MeuSite.com - Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        document.getElementById('hamburguer').addEventListener('click', () => {
+            document.querySelector('.menu').classList.toggle('ativo');
+        });
+    </script>
+</body>
+</html>
